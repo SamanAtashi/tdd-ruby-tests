@@ -16,7 +16,7 @@ describe 'Solver' do
     end
 
     it 'return an error if the given number is negative' do
-      expect{ solver.factorial(-12) }.to raise_error('Number is less than 0')
+      expect { solver.factorial(-12) }.to raise_error('Number is less than 0')
     end
   end
 
