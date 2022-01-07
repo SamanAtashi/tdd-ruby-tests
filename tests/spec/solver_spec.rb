@@ -14,6 +14,10 @@ describe 'Solver' do
     it 'return 720 when given 6' do
       expect(solver.factorial(6)).to eq 720
     end
+
+    it 'return an error if the given number is negative' do
+      expect{ solver.factorial(-12) }.to raise_error('Number is less than 0')
+    end
   end
 
   context '#reverse' do

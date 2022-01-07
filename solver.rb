@@ -1,6 +1,10 @@
 class Solver
   def factorial(num)
-    return 1 if num <= 1
+    if num < 0 
+        return raise Exception.new("Number is less than 0") 
+    end
+
+    return 1 if num == 0
 
     num * factorial(num - 1)
   end
